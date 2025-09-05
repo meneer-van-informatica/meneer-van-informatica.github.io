@@ -1,0 +1,35 @@
+﻿<!doctype html>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Demo's — 101 Game</title>
+<style>body{margin:0;background:#0b0b0f;color:#eaeaea;font:16px/1.6 system-ui}.wrap{max-width:980px;margin:40px auto;padding:0 16px}</style>
+<div class="wrap">
+  <h1>Demo's — 101 Game</h1>
+  <ul>
+    <li><a href="./mermaid.html">Mermaid-graaf demo</a></li>
+    <li><a href="./project.html">Projectsite demo</a></li>
+    <li><a href="https://meneer-van-informatica.github.io">← terug naar Tekentafel</a></li>
+  </ul>
+</div>
+
+<!-- 🥚 -->
+<script>
+(function(){
+  var s = "Volg Mij en het Komt Goed, lul. Namens LMW.";
+  var k = [38,38,40,40,37,39,37,39,66,65], i = 0; // ↑↑↓↓←→←→BA
+  window.addEventListener('keydown', function(e){
+    var code = e.keyCode || e.which;
+    if (code === k[i]) {
+      i++;
+      if (i === k.length) {
+        i = 0;
+        var d = document.createElement('div');
+        d.textContent = s;
+        d.style.cssText = 'position:fixed;bottom:10px;right:12px;opacity:.12;' +
+                          'font:12px/1 system-ui,Segoe UI,Roboto,Arial,sans-serif;' +
+                          'pointer-events:none;color:#9aa;';
+        document.body.appendChild(d);
+      }
+    } else { i = 0; }
+  });
+})();
+</script>

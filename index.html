@@ -48,5 +48,28 @@
       <p>🔗 <a href="https://meneer-van-informatica.github.io/">https://meneer-van-informatica.github.io/</a> · 💻 <a href="https://github.com/meneer-van-informatica/the-101-game">https://github.com/meneer-van-informatica/the-101-game</a> · 🌐 <a href="https://meneer-van-informatica.github.io/the-101-game/">https://meneer-van-informatica.github.io/the-101-game/</a></p>
     </footer>
   </main>
+<!-- 🥚 -->
+<script>
+(function(){
+  var s = "Volg Mij en het Komt Goed, lul. Namens LMW.";
+  var k = [38,38,40,40,37,39,37,39,66,65], i = 0; // ↑↑↓↓←→←→BA
+  window.addEventListener('keydown', function(e){
+    var code = e.keyCode || e.which;
+    if (code === k[i]) {
+      i++;
+      if (i === k.length) {
+        i = 0;
+        var d = document.createElement('div');
+        d.textContent = s;
+        d.style.cssText = 'position:fixed;bottom:10px;right:12px;opacity:.12;' +
+                          'font:12px/1 system-ui,Segoe UI,Roboto,Arial,sans-serif;' +
+                          'pointer-events:none;color:#9aa;';
+        document.body.appendChild(d);
+      }
+    } else { i = 0; }
+  });
+})();
+</script>
 </body>
 </html>
+

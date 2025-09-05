@@ -1,0 +1,45 @@
+﻿<!doctype html>
+<html lang="nl">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mermaid Demo — 101 Game</title>
+<style>body{margin:0;background:#0b0b0f;color:#eaeaea;font:16px/1.6 system-ui} .wrap{max-width:980px;margin:32px auto;padding:0 16px}</style>
+<div class="wrap">
+  <h1>Mermaid Demo — 101 Game</h1>
+  <p>Dit is een standalone render van de graaf (uit <code>docs/graph.md</code> als die bestond; anders een fallback).</p>
+  <p><a href="https://meneer-van-informatica.github.io">← terug naar Tekentafel</a></p>
+  <div class="mermaid">
+graph TD
+  A[Start] --> B{Hebben we notes?}
+  B -- ja --> C[Genereer Mermaid uit notes]
+  B -- nee --> D[Gebruik demo-graaf]
+  C --> E[Publiceer op usersite]
+  D --> E
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({startOnLoad:true});</script>
+</html>
+
+<!-- 🥚 -->
+<script>
+(function(){
+  var s = "Volg Mij en het Komt Goed, lul. Namens LMW.";
+  var k = [38,38,40,40,37,39,37,39,66,65], i = 0; // ↑↑↓↓←→←→BA
+  window.addEventListener('keydown', function(e){
+    var code = e.keyCode || e.which;
+    if (code === k[i]) {
+      i++;
+      if (i === k.length) {
+        i = 0;
+        var d = document.createElement('div');
+        d.textContent = s;
+        d.style.cssText = 'position:fixed;bottom:10px;right:12px;opacity:.12;' +
+                          'font:12px/1 system-ui,Segoe UI,Roboto,Arial,sans-serif;' +
+                          'pointer-events:none;color:#9aa;';
+        document.body.appendChild(d);
+      }
+    } else { i = 0; }
+  });
+})();
+</script>
