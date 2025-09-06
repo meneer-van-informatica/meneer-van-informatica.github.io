@@ -10,3 +10,5 @@ build/
 **/.cache/
 **/.parcel-cache/
 **/.vite/
+
+assets/og.png
