@@ -1,0 +1,4 @@
+:root{font-family:system-ui,sans-serif;line-height:1.6}
+body{margin:2rem;background:#0b0b0f;color:#f1f1ff}
+nav ul{list-style:none;padding:0;display:flex;gap:1rem;flex-wrap:wrap}
+nav a{text-decoration:none;border:1px solid currentColor;border-radius:.8rem;padding:.4rem .8rem}

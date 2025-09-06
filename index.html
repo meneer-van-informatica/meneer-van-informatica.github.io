@@ -1,63 +1,24 @@
 ﻿<!doctype html>
-<html lang="nl">
+<html lang='nl'>
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Tekentafel — 101 Game</title>
-<style>
-:root{--fg:#eaeaea;--bg:#0b0b0f;--acc:#73f59f;--btn:#1b3825}
-*{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
-.wrap{max-width:980px;margin:40px auto;padding:0 16px}
-h1{margin:0 0 .6rem;font-size:2.1rem} .lead{opacity:.9;margin:.2rem 0 1rem}
-a{color:#ffd400;text-decoration:none} a:hover{text-decoration:underline}
-.toolbar a{display:inline-block;margin:.35rem .4rem .8rem 0;padding:.6rem 1rem;border:1px solid var(--acc);border-radius:10px;background:var(--btn);color:var(--fg);text-decoration:none}
-.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
-.card{border:1px solid #222;border-radius:12px;padding:12px 14px;background:#0d0f13}
-.card h3{margin:.1rem 0 .35rem;font-size:1rem}
-.card p{margin:0;opacity:.9}
-@media(max-width:720px){.grid{grid-template-columns:1fr}}
-footer{opacity:.6;margin:16px 0}
-.note{font-size:.9rem;opacity:.85}
-</style>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>Tekentafel — 101 Game</title>
+  <meta name='description' content='Open leerwereld: 101 Game. Bouw mee, speel KM, bekijk de graaf, lees de docs.'>
+  <link rel='stylesheet' href='/assets/style.css'>
 </head>
 <body>
-<main class="wrap">
-  <h1>Tekentafel — 101 Game</h1>
-  <p class="lead">Ik verveel me. Dus bouwen we met de hele wereld aan de enige echte <b>101 Game</b> — samen, open, iteratief.</p>
-
-  <div class="toolbar">
-    <a href="https://github.com/meneer-van-informatica/the-101-game">Bouw je mee? → GitHub</a>
-    <a href="https://meneer-van-informatica.github.io/the-101-game/">Projectsite</a>
-    <a href="https://meneer-van-informatica.github.io/the-101-game/docs/graph.md">Mermaid-graaf</a>
-    <a href="https://meneer-van-informatica.github.io/play/km/">Speel KM</a>
-  </div>
-
-  <h2>Vage Visie</h2>
-  <div class="grid">
-    <div class="card"><h3>W0 Bits & Logica (L0–L9)</h3><p>binaire tel, XOR, K-map, adder</p></div>
-    <div class="card"><h3>W1 Algoritmen (L10–L19)</h3><p>lineair/binair, sort, invariant</p></div>
-    <div class="card"><h3>W2 Data & DB (L20–L29)</h3><p>ER, 1–3NF, select/project/join</p></div>
-    <div class="card"><h3>W3 Machines (L30–L39)</h3><p>FSM, fetch-decode-execute, pijplijn</p></div>
-    <div class="card"><h3>W4 Netwerken (L40–L49)</h3><p>pakket, DNS, HTTP, idempotent</p></div>
-    <div class="card"><h3>W5 AI-Basics (L50–L59)</h3><p>split, verlies, metric, bias</p></div>
-    <div class="card"><h3>W6 Robot-Choreo (L60–L69)</h3><p>states, millis-timing, tempo</p></div>
-    <div class="card"><h3>W7 Sensor & Regel (L70–L79)</h3><p>ruis, Kalman-intuïtie, PID</p></div>
-    <div class="card"><h3>W8 Product & Pitch (L80–L89)</h3><p>BOM, marge, poster, consent</p></div>
-    <div class="card"><h3>W9 Ethiek & Show (L90–L99)</h3><p>veiligheid, no-face, publiek</p></div>
-    <div class="card"><h3>L100 Finale</h3><p>‘alles samen’ bossfight met 3 checks</p></div>
-  </div>
-
-  <p class="note">Direct: <a href="https://meneer-van-informatica.github.io/the-101-game/docs/graph.md">Mermaid-graaf</a> · <a href="https://meneer-van-informatica.github.io/the-101-game/">Docs-map</a> · <a href="https://meneer-van-informatica.github.io/play/km/">Speel KM</a></p>
-  <footer>© 101 Game — open portal.</footer>
-</main>
-
-<!-- 🥚 Konami → subtiele afsluiting -->
-<script>
-(function(){var s="Volg Mij en het Komt Goed, lul. Namens LMW.";
-var k=[38,38,40,40,37,39,37,39,66,65],i=0;
-addEventListener('keydown',e=>{var c=e.keyCode||e.which;
-if(c===k[i]){i++; if(i===k.length){i=0;var d=document.createElement('div');
-d.textContent=s; d.style.cssText='position:fixed;bottom:10px;right:12px;opacity:.12;font:12px/1 system-ui;pointer-events:none;color:#9aa;'; document.body.appendChild(d);}}
-else{i=0;}});})();
-</script>
+  <main>
+    <h1>Tekentafel — 101 Game</h1>
+    <p>Dit is de GitHub Pages root. Als je dit ziet, werkt de deploy.</p>
+    <nav>
+      <ul>
+        <li><a href='https://github.com/meneer-van-informatica/the-101-game'>Bouw mee → GitHub</a></li>
+        <li><a href='/docs/'>Projectsite</a></li>
+        <li><a href='/docs/graph.html'>Mermaid-graaf</a></li>
+        <li><a href='/play/km/'>Speel KM</a></li>
+      </ul>
+    </nav>
+  </main>
 </body>
 </html>
