@@ -1,0 +1,12 @@
+# pages output junk
+.DS_Store
+Thumbs.db
+*.log
+node_modules/
+dist/
+build/
+
+# cache
+**/.cache/
+**/.parcel-cache/
+**/.vite/
