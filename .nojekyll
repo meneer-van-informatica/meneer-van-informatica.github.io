@@ -1,3 +1,0 @@
-git add .
-git commit -m 'site: minimale home + stijl + nojekyll'
-git push -u origin main
