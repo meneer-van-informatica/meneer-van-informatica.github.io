@@ -1,14 +1,12 @@
-# pages output junk
-.DS_Store
-Thumbs.db
-*.log
+# cache en bundles
+**/.cache/
+**/.parcel-cache/
+**/.vite/
 node_modules/
 dist/
 build/
 
-# cache
-**/.cache/
-**/.parcel-cache/
-**/.vite/
-
-assets/og.png
+# rommel
+*.log
+.DS_Store
+Thumbs.db
