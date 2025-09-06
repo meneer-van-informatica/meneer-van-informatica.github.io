@@ -10,3 +10,21 @@ build/
 *.log
 .DS_Store
 Thumbs.db
+
+# venv & caches
+.venv/
+**/__pycache__/
+*.pyc
+.pytest_cache/
+
+# logs & rommel
+*.log
+_trash/
+data/logs/
+!data/.gitkeep
+!data/logs/.gitkeep
+
+# build artefacts
+build/
+dist/
+*.egg-info/
